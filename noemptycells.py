@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 # Load your .csv file into a DataFrame
-file_path = "C:\\Users\\YOURUSERNAME\\Desktop\\output_with_technical_indicators.csv"
+file_path = "C:\\Users\\YOURUSERNAME\\Desktop\\feature1.csv" # swap feature1.csv with feature2.csv if you want no empty cells on both
 df = pd.read_csv(file_path)
 
 # Drop rows with missing data
