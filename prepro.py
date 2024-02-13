@@ -1,7 +1,7 @@
 import pandas as pd
 
 def preprocess_stock_data(file_path):
-    # Read the CSV file into a DataFrame
+    # Read the .csv file into a DataFrame
     df = pd.read_csv(file_path)
 
     # Display the original column names
@@ -30,11 +30,11 @@ def preprocess_stock_data(file_path):
     missing_values_after = df.isnull().sum().sum()
     print(f"Missing values removed: {missing_values_before - missing_values_after}")
 
-    # Convert the 'Date' column to datetime format
-    df['Date'] = pd.to_datetime(df['Date'])
+    # Convert the "Date" column to datetime format
+    df["Date"] = pd.to_datetime(df["Date"])
 
     # Sort the DataFrame by date in ascending order
-    df.sort_values(by='Date', inplace=True)
+    df.sort_values(by="Date", inplace=True)
     print("Data sorted by date.")
 
     # Display the preprocessed DataFrame
@@ -43,14 +43,14 @@ def preprocess_stock_data(file_path):
 
     return df
 
-# Replace 'your_stock_data.csv' with the actual path to your CSV file
-file_path = 'C:\\Users\\olehs\\Desktop\\GOOGL_data.csv'
+# Replace "your_stock_data.csv" with the actual path to your .csv file
+file_path = "C:\\Users\\YOURUSERNAME\\Desktop\\GOOGL_data.csv"
 preprocessed_data = preprocess_stock_data(file_path)
 
-# Specify the path for the new CSV file on the desktop
-output_file_path = 'C:\\Users\\olehs\\Desktop\\preprocessed_stock_data.csv'
+# Specify the path for the new .csv file on the desktop
+output_file_path = "C:\\Users\\YOURUSERNAME\\Desktop\\preprocessed_stock_data.csv"
 
-# Save the preprocessed data to a new CSV file
+# Save the preprocessed data to a new .csv file
 preprocessed_data.to_csv(output_file_path, index=False)
 
 print(f"\nPreprocessed data saved to {output_file_path}")
