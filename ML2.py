@@ -2,7 +2,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.preprocessing import StandardScaler
 
 # Load your .csv data
@@ -33,8 +33,17 @@ rf_model.fit(X_train_scaled, y_train)
 # Make predictions on the test set
 y_pred = rf_model.predict(X_test_scaled)
 
-# Evaluate the model
+# Evaluate the model, using MSE RMSE MAE and R2
 mse = mean_squared_error(y_test, y_pred)
 print(f"Mean Squared Error: {mse}")
+
+rmse = mean_squared_error(y_test, y_pred, squared=False)
+print(f"Root Mean Squared Error: {rmse}")
+
+mae = mean_absolute_error(y_test, y_pred)
+print(f"Mean Absolute Error: {mae}")
+
+r2 = r2_score(y_test, y_pred)
+print(f"R-squared (R2): {r2}")
 
 # Now you can use the trained model to make predictions on new data
