@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_percentage_error
 
 # Load the dataset
-data = pd.read_csv("C:\\Users\\olehs\\Desktop\\cleaned_file1.csv")
+data = pd.read_csv("C:\\Users\\YOURUSERNAME\\Desktop\\cleaned_file1.csv")
 
 # Convert Date column to datetime type
 data['Date'] = pd.to_datetime(data['Date'])
