@@ -56,7 +56,7 @@ y_test_inv = y_test * scaler.scale_[4] + scaler.min_[4]
 # Manual inverse transformation for y_pred
 y_pred_inv = y_pred * scaler.scale_[4] + scaler.min_[4]
 
-# Model evaluation. Decided to go with Mean Absolute Error (MAE), Mean Absolute Scaled Error (MASE), Accuracy Percent, Root Mean Squared Error (RMSE), Mean Absolute Percent Error (MAPE)
+# Model evaluation
 mse = mean_squared_error(y_test_inv, y_pred_inv)
 rmse = np.sqrt(mse)
 mae = mean_absolute_error(y_test_inv, y_pred_inv)
