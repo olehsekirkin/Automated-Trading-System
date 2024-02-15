@@ -34,6 +34,7 @@ Feature 2 includes: Open, High, Low, Close, Adj Close, Volume, adx, aroon up, ar
 4. Machine Learning Models:
 The heart of the project lies in the implementation of two distinct models. The LSTM model, known for its ability to capture temporal dependencies, is employed to analyze sequential data, while a decision tree model adds a different perspective, leveraging a tree-like model of decisions for robust predictions. ML1.py contains the LSTM model and ML2.py contains the Decision Tree Model.
 
+The model evaluation is already integrated within the training of the MLMs (ML1.py and ML2.py), so for the LSTM model I went with MSE (Mean Squared Error), RMSE (Root Mean Squared Error), MAE (Mean Absolute Error) and MAPE (Mean Absolute Percentage Error). For the Decision Tree model I went with MSE, RMSE, MAE and R2 (Coefficient of Determination).
 
 Now I really have to do a quick explanation of what both LTSM model and DT model are, because this will help us understand what we are working with.
 
