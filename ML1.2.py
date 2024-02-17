@@ -60,6 +60,7 @@ def run_experiment(n_steps, test_size, epochs, batch_size):
 
     return mse, rmse, mae, mape, y_test_inv, y_pred_inv
 
+#CONFIGURATION
 # n_steps is set to go through all the numbers between 10 and 100, same for test_size but from 0.1 to 0.5, epochs go from 10 to 100 and batch_size will use
 # use 32, 64 or 128.
 n_steps_options = (10,100)
