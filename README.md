@@ -63,6 +63,7 @@ They are particularly useful for tasks where the decision-making process needs t
 </p>
 
   5. Backtesting: Both models have variables that you can modify to try and get the best of it but, what is the best combination? The LSTM model has n_steps, epochs, batch_size and test_size, there is thousand of different combinations that you need to try before deciding which one is the most accurate. But that changes in "ML1.2.py", where I added "#CONFIGURATION", where you can modify which configurations you want to try and let Python work through them, giving you only the best (based on either RMSE, MSE, MAE or MAPE, your choice)
+For the Decision Tree model is much easier, playing around with the test_size is enough, then the other variable is n_estimators, which represents the number of trees in the forest, the higher the number the better the model, but the more time and computational power you need.
 
 ## What I Learned
 
