@@ -62,7 +62,7 @@ They are particularly useful for tasks where the decision-making process needs t
   <img src="https://365datascience.com/resources/blog/rr6cuudl59r-decision-trees-image1.png" alt="Title" width="350px" height="200px">
 </p>
 
-5. Backtesting: Both models have variables that you can modify to try and get the best of it but, what is the best combination? The LSTM model has n_steps, epochs, batch_size and test_size, there is thousand of different combinations that you need to try before deciding which one is the most accurate. But that changes in "ML1.2.py", where I added "#CONFIGURATION", where you can modify which configurations you want to try and let Python work through them, giving you only the best (based on either RMSE, MSE, MAE or MAPE, your choice)
+  5. Backtesting: Both models have variables that you can modify to try and get the best of it but, what is the best combination? The LSTM model has n_steps, epochs, batch_size and test_size, there is thousand of different combinations that you need to try before deciding which one is the most accurate. But that changes in "ML1.2.py", where I added "#CONFIGURATION", where you can modify which configurations you want to try and let Python work through them, giving you only the best (based on either RMSE, MSE, MAE or MAPE, your choice)
 
 ## What I Learned
 
