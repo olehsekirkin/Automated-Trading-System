@@ -9,7 +9,7 @@ from keras.layers import LSTM, Dense
 
 def load_and_prepare_data(n_steps):
 # Load the dataset
-    data = pd.read_csv("C:\\Users\\olehs\\Desktop\\cleaned_file1.csv")
+    data = pd.read_csv("C:\\Users\\YOURUSERNAME\\Desktop\\cleaned_file1.csv")
 
 # Convert Date column to datetime type
     data['Date'] = pd.to_datetime(data['Date'])
