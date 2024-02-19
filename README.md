@@ -77,4 +77,4 @@ Libraries used for this project so far that I've learned from: pandas, yfinance,
 
 ## What's next
 
-This is my biggest project so far. I feel like I still have A LOT to learn about Machine Learning models and application, so I will continue learning as I continue along this project. As the project itself, I want to implement model evaluation techniques, implement a trading system, integrate all of this with a brokerage API and some kind of monitoring system.
+This is my biggest project so far. I feel like I still have A LOT to learn about Machine Learning models and application, so I will continue learning as I continue along this project. As the project itself, I want to implement a trading system, integrate all of this with a brokerage API and some kind of monitoring system.
