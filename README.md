@@ -1,5 +1,4 @@
-# Automated-Trading-System
-Automated Trading System: Data-driven Approach with Machine Learning Models
+# FinML: Data-Driven Finance
 
 <p align="center">
   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200522142429/Why-Python-Is-Used-For-Developing-Automated-Trading-Strategy1.png" alt="Title" width="380px" height="195px">
