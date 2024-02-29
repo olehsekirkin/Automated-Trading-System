@@ -1,18 +1,14 @@
 # FinML: Data-Driven Finance
 
-<p align="center">
-  <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200522142429/Why-Python-Is-Used-For-Developing-Automated-Trading-Strategy1.png" alt="Title" width="380px" height="195px">
-</p>
-
-## Description
+## Introduction
 
 Embarking on the exciting journey of machine learning models (MLM) marks a significant milestone in my exploration of the vast realm of artificial intelligence. In this project, I've immersed myself in the intricacies of MLM, tackling the entire process independently – from the foundational step of data collection to the intricate evaluation and seamless integration with brokerage APIs.
 
 ### Understanding Machine Learning Models:
 
-Machine learning models, a subset of artificial intelligence, empower systems to learn patterns and make predictions or decisions without explicit programming. In the financial domain, MLM play a pivotal role, offering insights and predictions that can influence investment strategies. This project delves into the nuances of MLM, employing a comprehensive approach that encompasses data collection, preprocessing, feature engineering, and the implementation of two distinct models - Long Short-Term Memory (LSTM) and a Random Regression model.
+Machine learning models, a subset of artificial intelligence, empower systems to learn patterns and make predictions or decisions without explicit programming. In the financial domain, MLM play a pivotal role, offering insights and predictions that can influence investment strategies. This project delves into the nuances of MLM, employing a comprehensive approach that encompasses data collection, preprocessing, feature engineering, and the implementation of various models.
 
-### Project Overview:
+## Project Overview:
 
 1. Data Collection:
 The journey begins with the meticulous collection of relevant data. Accurate and comprehensive datasets form the foundation for effective machine learning, and in this project, I've taken the initiative to gather data essential for financial analysis. The datacollection.py serves this purpose, thanks to the yfinance library I could input a starting date, an ending date and the interval (1d, 1wk, 1mo, ...) and get in response the dataset with all the information I needed about a stock of my choice. The numeric columns have 3 decimals by default, this can be changed too. The .csv goes straight to the desktop.
@@ -35,8 +31,11 @@ The heart of the project lies in the implementation of two distinct models. The 
 
 The model evaluation is already integrated within the training of the MLMs (LSTM1.py and randomforestregression.py), so for the LSTM model I went with MSE (Mean Squared Error), RMSE (Root Mean Squared Error), MAE (Mean Absolute Error) and MAPE (Mean Absolute Percentage Error). For the Random Regression model I went with MSE, RMSE, MAE and R2 (Coefficient of Determination).
 
-Now I really have to do a quick explanation of what both LTSM model and DT model are, because this will help us understand what we are working with.
+  5. Backtesting: Both models have variables that you can modify to try and get the best of it but, what is the best combination? The LSTM model has n_steps, epochs, batch_size and test_size, there is thousand of different combinations that you need to try before deciding which one is the most accurate. But that changes in "LSTM1.2.py", where I added "#CONFIGURATION", where you can modify which configurations you want to try and let Python work through them, giving you only the best (based on either RMSE, MSE, MAE or MAPE, your choice).
 
+For the Random Regression model is much easier, playing around with the test_size is enough, then the other variable is n_estimators, which represents the number of trees in the forest, the higher the number the better the model, but the more time and computational power you need.
+
+Now I really have to do a quick explanation of what both LTSM model and DT model are, because this will help us understand what we are working with.
 
 ### LSTM model
 The Long Short-Term Memory (LSTM) model represents a breakthrough in the field of recurrent neural networks (RNNs), specifically designed to address the limitations of traditional RNNs when dealing with long sequences of data. LSTMs are particularly adept at learning and retaining information over extended periods, making them suitable for tasks involving time series data, natural language processing, and other applications with complex temporal dependencies.
@@ -60,9 +59,6 @@ They are particularly useful for tasks where the decision-making process needs t
 <p align="center">
   <img src="https://miro.medium.com/v2/resize:fit:567/1*Mb8awDiY9T6rsOjtNTRcIg.png" alt="Title" width="350px" height="200px">
 </p>
-
-  5. Backtesting: Both models have variables that you can modify to try and get the best of it but, what is the best combination? The LSTM model has n_steps, epochs, batch_size and test_size, there is thousand of different combinations that you need to try before deciding which one is the most accurate. But that changes in "LSTM1.2.py", where I added "#CONFIGURATION", where you can modify which configurations you want to try and let Python work through them, giving you only the best (based on either RMSE, MSE, MAE or MAPE, your choice)
-For the Random Regression model is much easier, playing around with the test_size is enough, then the other variable is n_estimators, which represents the number of trees in the forest, the higher the number the better the model, but the more time and computational power you need.
 
 ## What I Learned
 
