@@ -60,6 +60,25 @@ They are particularly useful for tasks where the decision-making process needs t
   <img src="https://miro.medium.com/v2/resize:fit:567/1*Mb8awDiY9T6rsOjtNTRcIg.png" alt="Title" width="350px" height="200px">
 </p>
 
+### AdaBoost for Decision Trees classifiers
+
+AdaBoost, short for Adaptive Boosting, is a machine learning ensemble technique that combines multiple weak classifiers to create a strong classifier. The core principle behind AdaBoost is to fit a sequence of weak learners (i.e., models that are only slightly better than random guessing) on repeatedly modified versions of the data. The predictions from all of them are then combined through a weighted majority vote (or sum) to produce the final prediction. The data modifications at each iteration consist of applying weights to each of the training samples. Initially, these weights are all equal, but on each subsequent round, the weights of incorrectly classified instances are increased so that the weak learner is forced to focus on the hard cases and thus improve the overall model performance.
+
+Decision Trees are a popular choice for use with AdaBoost due to their capacity to handle complex data structures and their tendency to overfit their training data. When used in AdaBoost:
+
+- Initialization: Each data point is initially given the same weight.
+- Iteration:
+A Decision Tree is trained on the weighted data. This tree is typically a stump (a tree with a single decision node and two leaves), which constitutes a weak learner.
+The tree is used to classify the training data, and the error is calculated based on the weighted instances. The error is the sum of the weights associated with the incorrectly classified instances.
+A weight (alpha) is assigned to the stump based on its accuracy; more accurate stumps are given more weight.
+The weights of the training instances are updated: weights are increased for those instances that were misclassified, making them more important for the next iteration.
+The process repeats, each time focusing more on the instances that previous stumps misclassified.
+- Combination: After many rounds, the algorithm combines the stumps into a single model, where each stump contributes to an ensemble prediction weighted by its accuracy.
+
+<p align="center">
+  <img src="https://editor.analyticsvidhya.com/uploads/98218100.JPG" alt="Title" width="350px" height="200px">
+</p>
+
 ## What I Learned
 
 I gained hands-on experience in data collection, preprocessing, and feature engineering. Leveraging libraries like numpy, pandas, and yfinance, I created a robust dataset for financial analysis.
