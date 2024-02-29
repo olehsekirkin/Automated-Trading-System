@@ -83,8 +83,6 @@ The process repeats, each time focusing more on the instances that previous stum
 
 I gained hands-on experience in data collection, preprocessing, and feature engineering. Leveraging libraries like numpy, pandas, and yfinance, I created a robust dataset for financial analysis.
 
-Implementing Long Short-Term Memory (LSTM) and Random Regression models provided insights into handling sequential data and transparent decision-making processes. The LSTM's ability to capture long-term dependencies and the Random Regression's interpretability were key takeaways.
-
 The project enhanced my understanding of model evaluation, performance metrics, and effective communication of complex concepts. Overall, it laid the foundation for further exploration into advanced machine learning techniques.
 
 Libraries used for this project so far that I've learned from: pandas, yfinance, numpy, pathlib, ta.trend, scikit, keras, tensorflow
