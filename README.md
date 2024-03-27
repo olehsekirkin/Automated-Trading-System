@@ -1,4 +1,8 @@
-# FinML: Data-Driven Finance
+<p align="center">
+  <img src="https://startagist.com/wp-content/uploads/2024/02/Finance-sectors-AI.jpg" alt="Title" width="540px" height="320px">
+</p>
+
+# Data Driven Finance & Machine Learning Application
 
 ## Introduction
 
