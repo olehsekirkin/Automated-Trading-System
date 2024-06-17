@@ -83,14 +83,3 @@ The process repeats, each time focusing more on the instances that previous stum
   <img src="https://editor.analyticsvidhya.com/uploads/98218100.JPG" alt="Title" width="350px" height="200px">
 </p>
 
-## What I Learned
-
-I gained hands-on experience in data collection, preprocessing, and feature engineering. Leveraging libraries like numpy, pandas, and yfinance, I created a robust dataset for financial analysis.
-
-The project enhanced my understanding of model evaluation, performance metrics, and effective communication of complex concepts. Overall, it laid the foundation for further exploration into advanced machine learning techniques.
-
-Libraries used for this project so far that I've learned from: pandas, yfinance, numpy, pathlib, ta.trend, scikit, keras, tensorflow
-
-## What's next
-
-This is my biggest project so far. I feel like I still have A LOT to learn about Machine Learning models and application, so I will continue learning as I continue along this project. As the project itself, I want to implement a trading system, integrate all of this with a brokerage API and some kind of monitoring system.
