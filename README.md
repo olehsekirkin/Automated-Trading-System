@@ -69,10 +69,10 @@ In this project, I've implemented an LSTM (Long Short-Term Memory) model for sto
 5. Prediction and Evaluation: After training, I use the model to predict on the test set. I inverse-transform the predictions to get actual price values and evaluate performance using multiple metrics: MSE, RMSE, MAE, and MAPE.
 
 6. Hyperparameter Tuning: To optimize the model, I experiment with different combinations of hyperparameters:
-   - Sequence length (n_steps): 10 and 100
-   - Test set size: 10% and 50%
-   - Number of epochs: 10 and 100
-   - Batch size: 32, 64, and 128
+   - Sequence length (n_steps): 10 to 100
+   - Test set size: 10% to 50%
+   - Number of epochs: 10 to 100
+   - Batch size: 32, 64, or 128
 
 7. Optimization: My script runs multiple experiments with these different hyperparameter combinations. It then selects the best configuration based on the lowest RMSE.
 
